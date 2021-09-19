@@ -202,3 +202,9 @@ console.error: Region.jsm: "Failed to fetch region" (new Error("NO_RESULT", "res
 1632045470079	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
 1632045479766	Marionette	INFO	Stopped listening on port 63249
 JavaScript error: resource:///modules/Interactions.jsm, line 230: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+1632046363850	geckodriver	INFO	Listening on 127.0.0.1:58073
+1632046366836	mozrunner::runner	INFO	Running command: "C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\SAMSUNG\\AppData\\Local\\Temp\\rust_mozprofileBes7VU"
+1632046370666	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\SAMSUNG\\AppData\\Local\\Temp\\rust_mozprofileBes7VU\\search.json.mozlz4", (void 0)))
+1632046387703	Marionette	INFO	Listening on port 58081
+1632046388530	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
