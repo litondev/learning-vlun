@@ -192,3 +192,13 @@ JavaScript error: resource:///modules/Interactions.jsm, line 230: NS_ERROR_FAILU
 
 ###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
 
+1632045444858	geckodriver	INFO	Listening on 127.0.0.1:63241
+1632045447793	mozrunner::runner	INFO	Running command: "C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\SAMSUNG\\AppData\\Local\\Temp\\rust_mozprofilelyTw3k"
+1632045451697	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\SAMSUNG\\AppData\\Local\\Temp\\rust_mozprofilelyTw3k\\search.json.mozlz4", (void 0)))
+console.error: Region.jsm: "Error fetching region" (new TypeError("NetworkError when attempting to fetch resource.", ""))
+console.error: Region.jsm: "Failed to fetch region" (new Error("NO_RESULT", "resource://gre/modules/Region.jsm", 419))
+1632045469709	Marionette	INFO	Listening on port 63249
+1632045470079	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1632045479766	Marionette	INFO	Stopped listening on port 63249
+JavaScript error: resource:///modules/Interactions.jsm, line 230: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
